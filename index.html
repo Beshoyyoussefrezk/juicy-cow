@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juicy Cow</title>
+  <meta name="keywords"
+    content=" Burgers, Fried Chicken, Fries, Bites, Cheese, Wings, cheese curds, Brunch, hamburger, cocktails, family friendly, Wauwatosa, Milwaukee, Oconomowoc, restaurant">
+  <meta name="description"
+    content="Juicy Cow is a family friendly burger and fried chicken restaurant located in Oconomowoc, Wauwatosa, and Milwaukee Wisconsin">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" href="img/juicy-cow-logo.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- start loading screen -->
+  <section id="loading" class="fixed-top  justify-content-center align-items-center">
+    <div class="loading-content d-flex flex-column justify-content-center align-items-center">
+      <div class="spinner-box">
+        <div class="circle-border">
+          <div class="circle-core"></div>
+        </div>
+      </div>
+      <div class="font-juicy-cow loading-write">
+        <p class="text-capitalize">loading ...</p>
+      </div>
+    </div>
+  </section>
+  <!-- end loading screen -->
+
+  <!-- start best dish -->
+  <section id="best-dish  ">
+    <div class="container-best-dish  d-flex  ">
+      <div class="best-dish bg-best-dish p-3 overflow-auto">
+        <div class="content-best-dish ">
+          <h2 class="text-juicy-cow font-juicy-cow text-capitalize mb-2 text-center">best dish to you</h2>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name-op">
+            <span id="name-er" class="font-weight-bold text-danger"></span>
+          </div>
+          <div class="form-group">
+            <label for="dish">Your Fav Dish</label>
+            <input type="text" class="form-control" id="dish-op">
+            <span id="dish-er" class="font-weight-bold text-danger"></span>
+          </div>
+          <div class="form-group">
+            <label for="comment">Your Comment</label>
+            <textarea class="form-control" id="comment-op" rows="3"></textarea>
+            <span id="comment-er" class="font-weight-bold text-danger"></span>
+          </div>
+          <button type="button" id="btn-op" class="btn bg-best-dish shadow w-100">Add</button>
+
+          <div class="form-group mt-5">
+            <input type="text" class="form-control" placeholder="search in opinions" id="search-op">
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Fav Dish</th>
+                <th scope="col">Your Comment</th>
+                <th class="" scope="col">Edit</th>
+                <th class="" scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="icon-best-dish pointer">
+        <i class="fas fa-hamburger fa-2x bg-best-dish p-3"></i>
+      </div>
+    </div>
+
+  </section>
+  <!-- start best dish -->
+
+
+
+  <!-- start HEADER WEBSITE NAV HEADER -->
+  <main class="position-relative">
+
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg position-absolute navbar-light w-100 mt-3 ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active  px-2 ">
+            <a class="nav-link nav-juicy-cow before-animate px-0" href="#locations">locations</a>
+          </li>
+          <li class="nav-item active  px-2 ">
+            <a class="nav-link nav-juicy-cow before-animate px-0" href="#reservations">reservations</a>
+          </li>
+          <li class="nav-item active  px-2 ">
+            <a class="nav-link nav-juicy-cow before-animate px-0" href="#our-food">our food</a>
+          </li>
+          <li class="nav-item active px-2 ">
+            <a class="nav-link nav-juicy-cow before-animate px-0" href="#catering">catering</a>
+          </li>
+          <li class="nav-item active px-2 ">
+            <a class="nav-link nav-juicy-cow before-animate px-0" href="#private-events">private-events</a>
+          </li>
+          <li class="nav-item active px-2 ">
+            <a class="nav-link nav-juicy-cow before-animate px-0" href="#follow-us">recipes</a>
+          </li>
+          <!-- <li class="nav-item active px-2 pl-5 media-nav">
+            <a class="nav-link nav-juicy-cow nav-juicy-cow-btn btn btn-dark px-4 text-white rounded font-weight-normal"
+              href="#">Order Now!</a>
+          </li> -->
+
+
+        </ul>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start header -->
+    <header>
+      <div class="header w-100 vh-100">
+        <div class="header-overlay w-100 vh-100 d-flex justify-content-center align-items-lg-center">
+          <div class="header-content w-75 text-center">
+            <h1 class="text-uppercase pt-5 mb-0 font-juicy-cow pointer">Juicy Cow</h1>
+            <img src="img/header/juicy-cow-header-content.png" alt="juicy cow meal">
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start arrow up -->
+    <div class="arrow-up pointer">
+      <i class="fas fa-3x fa-arrow-circle-up"></i>
+    </div>
+    <!-- end arrow up -->
+
+
+  </main>
+  <!-- end HEADER WEBSITE NAV HEADER -->
+
+  <!-- start section locations -->
+  <section id="locations" class="bg-juicy-cow">
+    <div class="container">
+      <!-- start checks & flib animate -->
+      <div class="animate text-center  py-5">
+        <img src="img/juicy-cow-ani.png" class="pt-5" alt="cow animate">
+        <p class="text-juicy-cow font-juicy-cow mb-0 ">Juicy</p>
+        <div class="ani-variety ">
+          <ul class="list-unstyled font-juicy-cow">
+            <li>pizza.</li>
+            <li>Burgers.</li>
+            <li>Brisket.</li>
+            <li>Others.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- end checks & flib animate -->
+
+      <!-- start 3 locations cards  -->
+      <div id="item-location" class="row py-5 justify-content-between motion1-translate">
+        <div class="col-lg-3 pointer">
+          <div class="item-location p-3 bg-white">
+            <img src="img/location/loction1.jpeg" class="w-100 img-location" alt="Wauwatosa">
+            <div class="d-flex justify-content-center align-items-end">
+              <p class="font-juicy-cow">Wauwatosa</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 pointer">
+          <div class="item-location p-3 bg-white">
+            <img src="img/location/loction2.jpeg" class="w-100 img-location" alt="Milwaukee">
+            <div class="d-flex justify-content-center align-items-end">
+              <p class="font-juicy-cow">Milwaukee</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 pointer">
+          <div class="item-location p-3 bg-white">
+            <img src="img/location/loction3.jpeg" class="w-100 img-location" alt="Oconomowoc">
+            <div class="d-flex justify-content-center align-items-end">
+              <p class="font-juicy-cow">Oconomowoc</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- start location-slider  -->
+      <section id="location-slider">
+        <div class="overlay-location-slider w-100 vh-100 fixed-top">
+          <div class="container m-location-slider rounded-lg overflow-auto w-75 position-relative p-5 bg-juicy-cow shadow-lg media-slider">
+            <div class="img-location-slider text-center">
+              <img src="" class="w-75 h-50 rounded-lg" alt="">
+            </div>
+            <div class="icon-location-slider position-absolute d-flex align-items-center justify-content-between">
+              <div class="iconLeft-location-slider pointer">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="iconClose-location-slider position-absolute pointer">
+                <i class="fas fa-times"></i>
+              </div>
+              <div class="iconRight-location-slider pointer">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end location-slider  -->
+      <!-- end 3 locations cards  -->
+
+      <!-- start call reservations  -->
+      <div id="reservations" class="motion1-translate d-flex justify-content-center">
+        <div class="call-reservation py-5 text-center">
+          <h2 class="font-juicy-cow pb-2 text-uppercase">call for reservations !</h2>
+          <p class="font-juicy-cow text-uppercase">We are
+            <strong>
+              unapologetically juicy
+            </strong>
+            , our food is made with time and care, and everyone is welcome (no jerks).
+          </p>
+        </div>
+      </div>
+      <!-- end call reservations  -->
+    </div>
+  </section>
+  <!-- end section locations -->
+
+  <!-- start section 2 -->
+  <section class="bg-juicy-cow">
+    <div class="container-fluid">
+
+      <!-- start section our food -->
+      <section id="our-food" class="row position-relative">
+        <div class="col-lg-6 pr-our-food">
+          <div class="img-our-food">
+            <img src="img/food&catering&private/our-food.jpg" class="img-fluid" alt="our food">
+          </div>
+        </div>
+        <div class="col-lg-6 pl-our-food">
+          <div class="content-our-food h-100">
+            <div class="d-flex justify-content-center align-items-center py-5 h-100">
+              <div>
+                <h2 class="font-juicy-cow text-juicy-cow text-uppercase">Our Food</h2>
+                <p class="text-juicy-cow">We offer a wide variety using the best ingredients.</p>
+                <a href="#recipes" class="btn btn-juicy-cow rounded-lg text-juicy-cow text-uppercase px-4">View
+                  Menus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section our food -->
+
+      <!-- start section Catering-->
+      <section id="catering" class="my-3">
+        <div class="catering-overlay w-100 h-100">
+          <div class="content-catering d-flex justify-content-center align-items-center py-5 ">
+            <div class="py-5 text-center ">
+              <h2 class="visibleHidden font-juicy-cow text-juicy-cow text-uppercase mb-0 pt-5">Catering</h2>
+              <p class="visibleHidden text-juicy-cow pb-3">Let us cater your next event.</p>
+              <a href="#recipes"
+                class="visibleHidden btn btn-juicy-cow rounded-lg text-juicy-cow text-uppercase px-4 mb-5">Place A
+                Catering
+                Order</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section Catering-->
+
+      <!-- start section private events-->
+      <section id="private-events" class="row position-relative pb-3">
+        <div class="col-lg-6 pr-private-events">
+          <div class="content-private-events h-100">
+            <div class="d-flex justify-content-center align-items-center py-5 h-100 ">
+              <div>
+                <h2 class="font-juicy-cow text-juicy-cow text-uppercase ">Private Events</h2>
+                <p class="text-juicy-cow">We’d love to host your next event!</p>
+                <a href="#recipes" class="btn btn-juicy-cow rounded-lg text-juicy-cow text-uppercase px-4">Inquire Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pl-private-events ">
+          <div class="img-private-events">
+            <img src="img/food&catering&private/private events.jpg" class="img-fluid" alt="private-events">
+          </div>
+        </div>
+      </section>
+      <!-- end section private events-->
+
+      <!-- end section Follow Us-->
+      <section id="follow-us" class="pt-5 pb-4">
+        <div class="d-flex justify-content-around align-items-center media-follow">
+          <div class="text-center follow-us">
+            <h4 class="font-juicy-cow text-juicy-cow">Followers more than</h4>
+            <h2 id="followers" class="font-juicy-cow text-juicy-cow"></h2>
+          </div>
+          <div class="text-center follow-us media-space">
+            <h2 class="font-juicy-cow text-juicy-cow">
+              <i class="fab fa-instagram"></i> Follow Us
+            </h2>
+            <a href="#" class="font-juicy-cow text-juicy-cow">@juicycow</a>
+          </div>
+          <div class="text-center follow-us">
+            <h4 class="font-juicy-cow text-juicy-cow">Dishes more than</h4>
+            <h2 id="dishes" class="font-juicy-cow text-juicy-cow"></h2>
+          </div>
+        </div>
+      </section>
+      <!-- end section Follow Us-->
+
+    </div>
+  </section>
+  <!-- end section 2 -->
+
+  <section id="recipes">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 cow-recipes overflow-hidden position-relative  bg-juicy-cow ">
+          <div class="menu-recipes p-3 w-100">
+            <div class="menu-recipe mb-3 text-center pointer">
+              <img src="img/recipes/burger.png" class="w-25" alt="hamburger">
+              <p class="m-minus text-capitalize font-juicy-cow">hamburger</p>
+            </div>
+            <div class="menu-recipe mb-3 text-center pointer">
+              <img src="img/recipes/chicken1.png" class="w-25" alt="chicken">
+              <p class="m-minus text-capitalize font-juicy-cow">chicken</p>
+            </div>
+            <div class="menu-recipe mb-3 text-center pointer">
+              <img src="img/recipes/pizza.png" class="w-25" alt="pizza">
+              <p class="text-capitalize font-juicy-cow">pizza</p>
+            </div>
+            <div class="menu-recipe mb-3 text-center pointer">
+              <img src="img/recipes/steak.png" class="w-25" alt="steak">
+              <p class="text-capitalize font-juicy-cow">steak</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9 bg-juicy-cow border-recipes">
+          <div class="row data-recipes"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="recipe-details"></section>
+
+  <section id="animate2" class="bg-juicy-cow position-relative">
+    <div class="container">
+      <!-- start checks & flib animate -->
+      <div class="animate text-center  py-5">
+        <img src="img/juicy-cow-ani.png" class="pt-5" alt="cow animate">
+        <p class="text-juicy-cow font-juicy-cow mb-0">Juicy</p>
+        <div class="ani-variety ">
+          <ul class="list-unstyled font-juicy-cow">
+            <li>pizza.</li>
+            <li>Burgers.</li>
+            <li>Brisket.</li>
+            <li>Others.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- end checks & flib animate -->
+    </div>
+  </section>
+
+  <!-- start footer -->
+  <footer class="footer bg-white ">
+    <div class="container-fluid py-3">
+      <div class="footer-content d-flex justify-content-between align-items-center">
+
+        <!-- start icons -->
+        <div class="icons d-flex justify-content-center w-25">
+          <div class="icon rounded-circle d-flex justify-content-center align-items-center">
+            <a href="">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+          <div class="icon rounded-circle d-flex justify-content-center align-items-center mx-2">
+            <a href="">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="icon rounded-circle d-flex justify-content-center align-items-center">
+            <a href="">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+        <!-- end icons -->
+
+        <!-- start clock -->
+        <div id="clock d-flex justify-content-around align-items-center">
+          <p class="clock font-weight-bolder mb-0"></p>
+        </div>
+        <!-- end clock -->
+
+        <!-- start information -->
+        <div class="information d-flex justify-content-center align-items-center w-25 ">
+          <div class="info mr-5">
+            <a href="#" class="text-decoration-none after text-juicy-cow text-uppercase font-juicy-cow">jobs</a>
+          </div>
+          <div class="info media-info">
+            <a href="#" class="text-decoration-none after text-juicy-cow text-uppercase font-juicy-cow">contact</a>
+          </div>
+        </div>
+        <!-- end information -->
+
+      </div>
+    </div>
+
+    <!-- start coder -->
+    <div class="coder font-juicy-cow text-capitalize d-flex justify-content-center py-2">
+      <p class="mb-0 py-1 pointer">coder by beshoy youssef</p>
+    </div>
+    <!-- end coder -->
+
+  </footer>
+  <!-- end footer -->
+
+
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
